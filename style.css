@@ -1,0 +1,182 @@
+:root {
+    --shadow-color: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    --button-bg-color: #667856;
+    --color: white;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+    font-weight: 900;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+    box-sizing: border-box;
+}
+
+.flex
+{
+    display: flex;
+}
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    min-width: 1000px; 
+}
+
+.left {
+    position: relative;
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    width: 35vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    min-width: 300px; 
+}
+
+.right {
+
+    flex-direction: column;
+    width: 65vw;
+    background-color: #f9fafb;
+    /* important*/
+    min-width: 700px; 
+}
+
+.odin-logo-container {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 180px;
+    height: 15%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.odin-logo-image {
+    background-image: url(images/odin-lined.png);
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+}
+
+.odin-logo-text {
+    position: relative;
+    top: 10px;
+    font-family: Norse;
+    color: var(--color);
+    font-size: 90px;
+}
+
+.descriptive-text {
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 60px;
+    padding-bottom: 5%;
+    height: 23vh;
+    box-sizing: border-box;
+}
+
+.form {
+    height: 47vh;
+    background-color: var(--color);
+    box-shadow: var(--shadow-color);
+    box-sizing: border-box;
+}
+
+#title-text
+{
+    padding-left: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.main-form {
+
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-form, .right-form {
+    width: 45%;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 60px;
+    padding-top: 20px;
+    gap: 20px;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.7rem;
+}
+
+.sign-up {
+    padding-top: 20px;
+    height: 30vh;
+    box-sizing: border-box;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:invalid:not(:focus) {
+    border: 1px solid #E5E7EB;
+}
+
+input:focus:invalid {
+    border: 2px solid red;
+}
+
+button[type="create"] {
+    margin-left: 60px;
+    height: 45px;
+    width: 180px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color);
+    cursor: pointer;
+    border: none;
+    background-color: var(--button-bg-color);
+    box-shadow: var(--shadow-color);
+}
+
+.login-link {
+    margin-left: 60px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#login {
+    color: var(--button-bg-color);
+    text-decoration: none;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.credit {
+    text-decoration: underline;
+    color: #E5E7EB;
+}
